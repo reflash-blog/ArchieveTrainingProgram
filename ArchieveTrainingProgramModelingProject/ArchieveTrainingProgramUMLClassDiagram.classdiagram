@@ -1,0 +1,310 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="89119c2c-968d-433c-8f10-1c1eec0744b8" name="ArchieveTrainingProgramUMLClassDiagram" linkedPackageId="41f16f28-81f6-4af2-820a-5e5a21e67218" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="22337216-5a66-4b1f-8d97-e34e11c9168d">
+      <profileInstance Id="8d2af8b5-7781-409b-af40-78e51e17f1be" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="33999464-5756-4f36-af66-bc7657af543b">
+      <profileInstance Id="1ceaef2d-c614-4892-9fb1-11e5bae668dc" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="31d9e493-48d1-4c86-a6cf-26bb16459641" name="ArchieveTrainingProgram">
+        <elementDefinition Id="4e607106-7ad1-4686-9b41-9d3c14679961" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="0e5dc88f-8300-4106-8221-6a46e9a6173b" name="MainWindow" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="243f4fa4-ce32-448f-964f-14d075b52354" />
+              <targetEnds>
+                <association Id="7849fa1a-beee-44a9-adf8-4afdb4666a51" isDerived="false" sourceEndRoleName="MainWindow" targetEndRoleName="MainWindowContext" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="2b6b6612-c39d-49c9-90a0-82df11cb23eb" LastKnownName="MainWindowContext" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="cf9afa4d-52e8-484d-86ad-184c6ab795bf" name="MainWindow" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="358a098a-446c-4211-bb72-a21359ee7c5c" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="5acd921d-4137-4a73-8dbf-a8ff834bcafb" name="MainWindowContext" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="1bc5fc10-1691-4319-bc88-47be7f00c264" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="aad47362-4353-4633-b51b-8ce1ef8f16f5" />
+                </association>
+              </targetEnds>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="2b6b6612-c39d-49c9-90a0-82df11cb23eb" name="MainWindowContext" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="aedf28bf-18f3-4fbb-963f-38e990b17a9c" />
+              <targetEnds>
+                <association Id="a0db370c-3301-4e92-adf6-9abd882358bb" isDerived="false" sourceEndRoleName="MainWindowContext" targetEndRoleName="ArchieveFileModel" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="d345f7d6-5a4a-4bf9-b704-03fc628b2953" LastKnownName="ArchieveFileModel" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="9bd905f0-7a2e-4831-8836-763969719936" name="MainWindowContext" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="41802e94-e4e1-4d17-be56-15254bb245df" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="7575543b-91ce-4c06-a037-23119da6b2f3" name="ArchieveFileModel" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="4d6bdf73-c652-4d85-8b41-0c317ff85a2f" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="d1d237f3-48d0-43c7-885d-e9d9d1a812d4" />
+                </association>
+              </targetEnds>
+              <ownedAttributesInternal>
+                <property Id="e1010920-61b4-4e59-a220-e39aaac04046" name="ArchieveFileModels" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="c9824e0d-0c55-47bc-bdac-49f4f56678be" />
+                </property>
+              </ownedAttributesInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="d345f7d6-5a4a-4bf9-b704-03fc628b2953" name="ArchieveFileModel" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="0af36598-bb69-47f0-b18e-e4c7af75dbbf" />
+              <targetEnds>
+                <association Id="eb4dfcbc-9c72-4483-863d-95dac2880968" isDerived="false" sourceEndRoleName="ArchieveFileModel" targetEndRoleName="IArchiveAlgorithm" isLeaf="false" isAbstract="false">
+                  <interfaceMoniker Id="75bad8f0-455c-4a28-aeab-b7f1a2172970" LastKnownName="IArchiveAlgorithm" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="7caebf02-4427-41a1-916b-3e0fa8d9856a" name="ArchieveFileModel" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="d0747dbe-f76e-4e06-a9d3-5006d9b52e3c" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="1e30a84f-857d-47e2-8828-cf8c3de6e844" name="IArchiveAlgorithm" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <lowerValueInternal>
+                          <literalString Id="f10fef8f-81ec-4eaa-8766-dbbef9219684" name="Lower" value="n">
+                            <elementDefinition Id="374c97ad-d168-4a48-a770-d28261d6747d" />
+                          </literalString>
+                        </lowerValueInternal>
+                        <upperValueInternal>
+                          <literalString Id="be888ed8-c7cd-48da-a7e0-9d1540da03db" name="Upper" value="n">
+                            <elementDefinition Id="a86a838d-d865-4b9e-8837-8ad310e26582" />
+                          </literalString>
+                        </upperValueInternal>
+                        <elementDefinition Id="2b022872-8f39-45ca-b59c-a39297a92a2e" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="6bf09c87-bfb6-46f2-a075-eca38774b211" />
+                </association>
+              </targetEnds>
+              <ownedAttributesInternal>
+                <property Id="255438e3-bb4e-4824-bee5-293d2693e8da" name="ArchieveAlgorithm" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="b4200425-b5be-4d86-bb0f-cdcffcb2d572" />
+                </property>
+                <property Id="48802b28-1a47-4be0-a83a-8f933a60411e" name="Name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="41720ea2-f2e6-4dc2-b07c-e28012f4f5c0" />
+                </property>
+              </ownedAttributesInternal>
+            </class>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="e9b759de-9ad6-4ee4-bf52-c5190aa246e6" name="ArchieveAlgorithms">
+        <elementDefinition Id="22cae236-c35c-48cf-8391-837091bbe5a5" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="13ab7fb1-32d5-47d5-9923-ddad76f9eba6" name="RleArchiveAlgorithm" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="0d385f56-34e4-47d3-8f9d-d186ece749ab" />
+              <suppliersInternal>
+                <interfaceRealization Id="22f5a0fb-6d42-436b-b69e-406c1792bff5">
+                  <interfaceMoniker Id="75bad8f0-455c-4a28-aeab-b7f1a2172970" LastKnownName="IArchiveAlgorithm" />
+                  <elementDefinition Id="380dc950-82ff-47b2-aae1-b9db5e036440" />
+                </interfaceRealization>
+              </suppliersInternal>
+              <ownedOperationsInternal>
+                <operation Id="4bedbc61-add6-499a-9ec3-9f46958b6931" name="Archieve" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="17b3dea7-c326-45ee-b843-bc4066aa9917" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="67b73e26-4f81-402b-86fe-597a3702f3b7" name="HuffmanArchiveAlgorithm" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="2217bb8e-58c4-4d75-9245-fe3dbc7af2ed" />
+              <suppliersInternal>
+                <interfaceRealization Id="1f37c27b-fdf4-461f-9c4d-aeca8a176021">
+                  <interfaceMoniker Id="75bad8f0-455c-4a28-aeab-b7f1a2172970" LastKnownName="IArchiveAlgorithm" />
+                  <elementDefinition Id="90e54063-9d29-4a15-8046-90426de9750d" />
+                </interfaceRealization>
+              </suppliersInternal>
+              <targetEnds>
+                <association Id="55ede11e-ffff-4152-be73-362dc8a939dc" isDerived="false" sourceEndRoleName="HuffmanArchiveAlgorithm" targetEndRoleName="HuffmanTree" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="bbfabc85-1f06-4ca4-8b6e-5b44944bfac2" LastKnownName="HuffmanTree" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="9b9b247e-57b0-41ab-b381-3e73980921d1" name="HuffmanArchiveAlgorithm" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="29c52624-9408-480c-849a-3dda08375673" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="94022ca1-282e-4fc7-9402-72ddb6cb88b9" name="HuffmanTree" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="7079117b-3426-4f40-b091-06a1e3189b9b" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="2a886160-bc33-4b2b-a515-907d13bd4c00" />
+                </association>
+              </targetEnds>
+              <ownedOperationsInternal>
+                <operation Id="c5b0af48-553d-4121-849d-362b095643f4" name="Archieve" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="1204394d-a4ef-47f3-bb5d-adb8b71041a4" />
+                </operation>
+                <operation Id="b59d6c78-ff41-41da-97fb-8e8f32e93d12" name="BitArrayToByteArray" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="607a0f9e-08ed-4ea1-a28d-47cbfe67f4ae" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="bbfabc85-1f06-4ca4-8b6e-5b44944bfac2" name="HuffmanTree" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="1f7e0d42-c218-480f-b049-fb1ccf291987" />
+              <targetEnds>
+                <association Id="d6b8793a-aff4-4888-964a-ecf93f53c904" isDerived="false" sourceEndRoleName="HuffmanTree" targetEndRoleName="Node" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="d43c67b9-d5e7-4961-a320-6c61cbca499a" LastKnownName="Node" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="0dd0773d-eb69-4770-a77c-88ea1bdd7fbb" name="HuffmanTree" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="d570bcb6-7b1a-47a5-a9bd-e30f4bb556b6" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="c5147426-3e72-4509-b98f-951adf65c629" name="Node" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <lowerValueInternal>
+                          <literalString Id="961f9f38-509f-45f2-9cbb-5887b04529e8" name="Lower" value="n">
+                            <elementDefinition Id="34d85a65-d911-47e2-828f-d2259cb0dd82" />
+                          </literalString>
+                        </lowerValueInternal>
+                        <upperValueInternal>
+                          <literalString Id="92aa0130-ec8e-4f21-a900-2bf93bb6868e" name="Upper" value="n">
+                            <elementDefinition Id="3c292627-bcd0-41f8-8d4d-10ac55fd7120" />
+                          </literalString>
+                        </upperValueInternal>
+                        <elementDefinition Id="ea779464-b867-45ce-82e9-4ef6a5585865" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="4b9c33de-8539-4df0-978d-18bf6778c03e" />
+                </association>
+              </targetEnds>
+              <ownedAttributesInternal>
+                <property Id="57c505ec-64fa-4790-9a31-3b5692817867" name="Root" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="d33196dc-6231-4f3c-8618-93cc7099b91e" />
+                </property>
+                <property Id="4c66d339-0820-4b5a-b1ab-aa22b5e23970" name="Frequencies" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="b7b258be-66d4-4c30-81d5-b41b843fd125" />
+                </property>
+              </ownedAttributesInternal>
+              <ownedOperationsInternal>
+                <operation Id="ca7f64d0-41db-449a-9835-9eee7f13747d" name="IsLeaf" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="4c8fec61-a68b-41a1-b6a7-57651c9bddb8" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="98f1b1f2-6c38-4044-9c18-1173e70ba4b0" name="node" direction="In" isUnique="false">
+                        <elementDefinition Id="688803b8-d785-4fdb-8666-9fcc38a1905d" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="d85bd02c-4d03-4c2a-974a-5140e6370782" name="Encode" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="ddccdb78-6341-4e2e-a83f-4c931a790f96" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="60204776-4c68-4df9-87dd-d2538ede4535" name="source" direction="In" isUnique="false">
+                        <elementDefinition Id="201d8d2b-0244-4fc5-9c65-64f76cbae77d" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="663c0e50-1d46-4708-b60e-49298070b7c4" name="Decode" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="7293f1b4-0cba-4bd8-b9d9-8af9a29ff40b" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="f890e57c-15e9-43dc-a33c-3e5f9644ab3e" name="bitarray" direction="In" isUnique="false">
+                        <elementDefinition Id="baaaee16-64b8-4794-8a28-f92e4700e2fb" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="8b5b4c9e-e796-4300-a237-0bebe781d8eb" name="Build" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="24d3eeaf-c11e-4bde-9e40-a30135e382df" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="ea65736d-cf6c-4d71-ad72-2b4b1c629b8d" name="source" direction="In" isUnique="false">
+                        <elementDefinition Id="20ecb120-1562-4675-9c8c-4dab265ebc8d" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="d43c67b9-d5e7-4961-a320-6c61cbca499a" name="Node" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="269cddda-20e5-40c3-88a2-7f1197b60b3c" />
+              <ownedAttributesInternal>
+                <property Id="bae312cb-352d-48e2-a694-f15acb7f040d" name="Symbol" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="00f27ca7-f932-4068-b59e-a06e5d750dcf" />
+                </property>
+                <property Id="31aa87c0-3b03-4cc5-b09d-dc23e81bd161" name="Frequency" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="5334cfb9-af6d-49ab-bf7f-cff892e2151d" />
+                </property>
+                <property Id="1fd1ad67-d3ac-4e43-8238-4df2d034a97d" name="Right" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="0f5c3c02-638a-4947-aa52-6874f12bf668" />
+                </property>
+                <property Id="558b5a76-a883-4757-918a-8359512d5da7" name="Left" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="e3994a5d-3fe3-4218-925c-f763238efa56" />
+                </property>
+              </ownedAttributesInternal>
+              <ownedOperationsInternal>
+                <operation Id="a9a66361-643a-4af6-b54d-51ea4fabbcc3" name="Traverse" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="8f69b60c-edde-4801-9277-91f4b8780b8c" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="9c1473e0-c5e6-4285-a1b6-98ade5ce9ecb" name="symbol" direction="In" isUnique="false">
+                        <elementDefinition Id="d33e525d-5736-4f55-b1e5-98396b8ddcff" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="ea950cd8-ed59-4bdb-aa51-3e7925fbf716" name="data" direction="In" isUnique="false">
+                        <elementDefinition Id="1f7137a3-5885-48d1-ba44-435485002d0d" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <Interface Id="75bad8f0-455c-4a28-aeab-b7f1a2172970" name="IArchiveAlgorithm" isAbstract="false" isLeaf="false">
+              <elementDefinition Id="07f5f32a-b65b-48da-bb83-6f08387a0090" />
+              <ownedOperations>
+                <operation Id="285f5e26-19ad-4642-86fc-510de968cbb0" name="Archieve" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="86237e90-8ffd-48d8-b878-0c98deb3b82f" />
+                </operation>
+              </ownedOperations>
+            </Interface>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+  </packagedElements>
+  <package Id="41f16f28-81f6-4af2-820a-5e5a21e67218" name="ArchieveTrainingProgramModelingProject">
+    <elementDefinition Id="de723a9a-ab58-4688-8f8a-266385466d8b" />
+  </package>
+</logicalClassDesignerModel>

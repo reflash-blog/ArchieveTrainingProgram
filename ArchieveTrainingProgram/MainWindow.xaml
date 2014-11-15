@@ -1,0 +1,45 @@
+﻿<Window x:Class="ArchieveTrainingProgram.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Icon="archieve.png"
+        Title="Обучающий модуль по алгоритмам архивации" Height="481.435" Width="781.962" Style="{StaticResource WindowStyle}" WindowStyle="None" >
+    <Grid>
+        <Menu HorizontalAlignment="Left" Height="26" VerticalAlignment="Top" Width="509" Background="Transparent">
+            <MenuItem Header="ФАЙЛ">
+                <MenuItem Header="Открыть" Command="{Binding OpenCommand}"/>
+                <MenuItem Header="Сохранить" Command="{Binding SaveCommand}"/>
+                <MenuItem Header="Архивировать" Command="{Binding ArchieveCommand}"/>
+            </MenuItem>
+            <MenuItem Header="ПОМОЩЬ">
+                <MenuItem Header="О программе" Command="{Binding AboutCommand}"/>
+                <MenuItem Header="Помощь" Command="{Binding HelpCommand}"/>
+            </MenuItem>
+        </Menu>
+        <ScrollViewer HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto" Margin="429,31,27,28" >
+            <TextBlock ScrollViewer.CanContentScroll="True" Margin="3"
+                       FontStyle="Italic" Text="{Binding Path=SelectedArchieveFileModelAlgorithmNotes}" TextWrapping="Wrap" TextAlignment="Justify" AllowDrop="False"
+                       FontFamily="Lucida Sans Unicode" />
+        </ScrollViewer>
+        <ComboBox ItemsSource="{Binding ArchieveFileModels}" SelectedItem="{Binding SelectedArchieveFileModel,Mode=TwoWay}" DisplayMemberPath="Name" HorizontalAlignment="Left" Margin="10,31,0,0" VerticalAlignment="Top" Width="180"/>
+        <StatusBar x:Name="VisualWindowStatusBar" VerticalAlignment="Bottom" Height="24">
+            <TextBlock x:Name="VisualWindowStatusBarTextBlock"  Margin="3,0,0,0" Text="{Binding StatusText}"/>
+            <StatusBarItem HorizontalAlignment="Right">
+                <ResizeGrip Opacity="0.75"/>
+            </StatusBarItem>
+        </StatusBar>
+        <TextBlock Margin="10,82,636,317" FontStyle="Italic" Text="Файл до архивации"/>
+        <TextBlock Margin="10,113,636,286" FontStyle="Italic" Text="{Binding FileModelCapacity}"/>
+        <ScrollViewer HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto" Margin="163,82,0,0" Height="153" VerticalAlignment="Top" HorizontalAlignment="Left" Width="261" >
+            <TextBlock ScrollViewer.CanContentScroll="True" Margin="3"
+                       FontStyle="Italic" Text="{Binding Path=FileModelBytes}" TextWrapping="Wrap" TextAlignment="Justify" AllowDrop="False"
+                       FontFamily="Lucida Sans Unicode" />
+        </ScrollViewer>
+        <TextBlock Margin="10,240,609,161" FontStyle="Italic" Text="Файл после архивации"/>
+        <TextBlock Margin="10,276,625,125" FontStyle="Italic" Text="{Binding ArchievedFileModelCapacity}"/>
+        <ScrollViewer HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto" Margin="163,240,0,0" Height="164" VerticalAlignment="Top" HorizontalAlignment="Left" Width="261" >
+            <TextBlock ScrollViewer.CanContentScroll="True" Margin="3"
+                       FontStyle="Italic" Text="{Binding Path=ArchievedFileModelBytes}" TextWrapping="Wrap" TextAlignment="Justify" AllowDrop="False"
+                       FontFamily="Lucida Sans Unicode" />
+        </ScrollViewer>
+    </Grid>
+</Window>
